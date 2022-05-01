@@ -1,13 +1,23 @@
 import "./App.css";
 import { ThirdwebWeb3Provider } from "@3rdweb/hooks";
 
-const supportChains = [4];
+import TestCompnent from "./TestCompnent";
+
+const supportedChainIds = [4];
+const connectors = {
+  injected: {},
+};
 
 function App() {
   return (
-    <div className="App">
-      <h1>hi sar</h1>
-    </div>
+    <ThirdwebWeb3Provider
+      supportedChainIds={supportedChainIds}
+      connectors={connectors}
+    >
+      <div className="App">
+        <TestCompnent />
+      </div>
+    </ThirdwebWeb3Provider>
   );
 }
 
