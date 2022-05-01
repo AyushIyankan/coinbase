@@ -23,7 +23,7 @@ export default createSchema({
           type: "string",
         },
         {
-          title: "Symbol",
+          title: "Symbols",
           name: "symbol",
           type: "string",
         },
@@ -36,6 +36,11 @@ export default createSchema({
           title: "USD Price",
           name: "usdPrice",
           type: "string",
+        },
+        {
+          title: "Logo",
+          name: "logo",
+          type: "image",
         },
       ],
     },
